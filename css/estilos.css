@@ -1,0 +1,64 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blueviolet;
+}
+#perrito{
+    width: 20%;
+    border: 2px solid red;
+    float: left;
+}
+a{
+    background-color: lightpink;
+    color: tomato;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding: 10px 15px 10px 15px;
+    padding: 10px;*/
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+a:hover{
+    background-color: tomato;
+    color: lightpink;
+}
+
+a:active{
+    background-color: lightblue;
+    color: tomato;
+}
+nav{
+    text-align: center;
+    /*margin-left: 220px;*/
+    
+}
+#cajaContacto{
+    width: 60%;/*ancho*/
+    /*height: 500px;alto*/
+    background-color: lightgray;/*colo de fondo*/
+    margin-left: 20%;/*margin izquierdo*/
+    margin-top: 40px;/*margin derecho*/
+    padding: 20px;
+}
+.form1{
+    width: 50%;
+    height: 35px;
+}
+.form2{
+    width: 50%;
+    height: 35px;
+    background-color: orangered;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}

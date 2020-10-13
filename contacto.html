@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>CONTACTO</h1>
+        <nav>
+            <a href="index.html" title="inicio">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="https://alumni.education/" target="_blank">Alumni</a>
+        </nav>
+    </header>
+    <main>
+        <div id="cajaContacto">
+            <form action="envio.php" method="POST" enctype="multipart/form-data"><!--get post-->
+                <label for="nombre">
+                    Nombre: <br>
+                </label>
+                <input type="text" id="nombre" name="nombre" maxlength="5" placeholder="escribe aquí tu nombre" required="required" class="form1"><br>
+                <label for="correo">
+                    Correo electrónico: <br>
+                </label>
+                <input type="email" id="correo" name="correo" class="form1"><br>
+                <label for="edad">
+                    Edad: <br>
+
+                </label>
+                <input type="number" id="edad" min="5" max="10" class="form1"><br>
+                <label for="clave">
+                    Contraseña: <br>
+                </label>
+                <input type="password" id="clave" name="clave" class="form1"><br>
+                Adjuntar CV: 
+                <input type="file" name="archivo" ><br>
+                <input type="hidden" name="oculto" value="valor"><br>
+                Color favorito:
+                <input type="color" name="color" ><br>
+                Sexo:
+                <input type="radio" name="sexo" value="femenino" checked> femenino
+                <input type="radio" name="sexo" value="masculino"> masculino
+                <input type="radio" name="sexo" value="masculino"> no definido
+                <br><br>
+                días disponibles: <br>
+                <input type="checkbox" name="lunes" id=""> lunes
+                <input type="checkbox" name="martes" id=""> martes
+                <input type="checkbox" name="miercoles" id="" checked> miércoles
+                <input type="checkbox" name="jueves" id=""> jueves
+                <input type="checkbox" name="viernes" id=""> viernes
+                <input type="checkbox" name="fines" id=""> fines de semana
+                <br><br>
+                Comentarios:<br>
+                <textarea name="comentarios" cols="50" rows="10" style="resize: none;"></textarea><br>
+                Colores: <br>
+                <select name="colores" class="form1">
+                    <option value="blue">azul</option>
+                    <option >verde</option>
+                    <option >amarillo</option>
+                    <option selected>rosado</option>
+                    
+                </select><br><br>
+                <input type="submit" value="Enviar Información" class="form2">
+                <!--<button>Enviar segundo botoncito</button>
+                <input type="reset" value="borrar">-->
+
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
